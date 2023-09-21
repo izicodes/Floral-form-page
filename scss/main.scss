@@ -1,3 +1,5 @@
+@import 'colors';
+
 * {
     margin: 0;
     padding: 0;
@@ -6,4 +8,5 @@
 
 .image-container img {
     width: 200px;
+    background-color:  $light-brown;
 }
