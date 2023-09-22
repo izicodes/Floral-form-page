@@ -43,7 +43,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
   color: #524f4b;
 }
 
@@ -94,14 +94,58 @@ body {
   flex-direction: column;
   gap: 40px;
 }
-
-#customerInformation {
-  margin-top: 40px;
-}
-#customerInformation h2 {
+.main-form form h2 {
   color: #a39676;
 }
-#customerInformation section {
+
+#customerInformation,
+#deliveryDetails {
+  margin-top: 40px;
+}
+#customerInformation label,
+#deliveryDetails label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+#customerInformation label input::-moz-placeholder, #customerInformation label select::-moz-placeholder, #deliveryDetails label input::-moz-placeholder, #deliveryDetails label select::-moz-placeholder {
+  color: #a39676;
+}
+#customerInformation label input::placeholder, #customerInformation label select::placeholder,
+#deliveryDetails label input::placeholder,
+#deliveryDetails label select::placeholder {
+  color: #a39676;
+}
+
+#bouquetSelection label {
+  height: auto !important;
+}
+
+#deliveryDetails {
+  margin: 0;
+}
+#deliveryDetails #deliveryDate {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#deliveryDetails #deliveryDate div {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+#deliveryDetails #deliveryDate div select {
+  width: 100%;
+}
+#deliveryDetails #deliveryDate div select::-webkit-scrollbar-track {
+  background: white;
+}
+#deliveryDetails label[for=specialInstructions] {
+  margin-top: 20px;
+}
+
+section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 20px;
@@ -109,36 +153,27 @@ body {
        column-gap: 30px;
   margin-top: 15px;
 }
-#customerInformation label {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 1.1rem;
-}
-#customerInformation label input::-moz-placeholder {
-  color: #a39676;
-}
-#customerInformation label input::placeholder {
-  color: #a39676;
-}
 
-input {
+input, select, textarea {
   border-radius: 6px;
   border-color: rgb(182, 172, 172);
   border-width: 1.5px;
   border-outline: none;
   border-style: solid;
   font-size: 1rem;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif !important;
   color: #524f4b;
-}
-input::-moz-placeholder {
-  color: #a39676;
-}
-input::placeholder {
-  color: #a39676;
-}
-input[type=text], input[type=email], input[type=tel] {
   outline: none;
-  padding: 15px 15px;
+  padding: 15px;
+}
+input::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder {
+  color: #a39676;
+}
+input::placeholder, select::placeholder, textarea::placeholder {
+  color: #a39676;
+}
+
+select {
+  padding: 15px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
