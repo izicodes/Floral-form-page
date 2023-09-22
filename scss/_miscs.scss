@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Inter&display=swap");
+
+@mixin border-radius($r) {
+	-webkit-border-radius: $r;
+	-moz-border-radius: $r;
+	-ms-border-radius: $r;
+	-border-radius: $r;
+}
+
+@mixin bgGradient($color1, $color2) {
+	background: $color1;
+	background: -moz-linear-gradient(129deg, $color1 0%, $color2 77%);
+	background: -webkit-linear-gradient(129deg, $color1 0%, $color2 77%);
+	background: linear-gradient(129deg, $color1 0%, $color2 77%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Gloock", serif;
+}

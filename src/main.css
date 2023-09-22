@@ -1,10 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Inter&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gloock", serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+  background-color: #646b4c;
+  background: #FEFAE0;
+  background: linear-gradient(129deg, #FEFAE0 0%, #CCD5AE 77%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  background-color: #646b4c;
+  width: 70%;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -border-radius: 15px;
+  height: 60%;
+  box-shadow: 0 0 15px 15px rgba(100, 107, 76, 0.168627451);
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
 .image-container img {
-  width: 200px;
-  background-color: #FAEDCD;
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-form {
+  background-color: #FEFAE0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 20px;
+  height: 100%;
+  overflow: auto;
+}
+.main-form h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #646b4c;
+}
+.main-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #FEFAE0;
+  margin: 25px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #646b4c;
+  border-radius: 3px;
+  border: 0px solid #ffffff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }/*# sourceMappingURL=main.css.map */
