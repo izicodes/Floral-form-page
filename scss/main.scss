@@ -1,12 +1,6 @@
 @import "colors";
 @import "miscs";
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 body {
 	height: 100vh;
 	background-color: $dark-green;
@@ -15,6 +9,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-family: "Inter", sans-serif;
+	color: $text;
 }
 
 .wrapper {
@@ -46,7 +41,7 @@ body {
 	background-color: $pale;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
-	padding: 20px;
+	padding: 40px 50px;
 	height: 100%;
 	overflow: auto;
 
@@ -60,27 +55,56 @@ body {
 		display: flex;
 		flex-direction: column;
 		gap: 40px;
+        
 	}
 }
 
-/* ===== Scrollbar CSS ===== */
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: $pale;
-    margin:25px;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color: $dark-green;
-    border-radius: 3px;
-    border: 0px solid #ffffff;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+#customerInformation {
+    margin-top: 40px;
+    h2 {
+        color: $inner-text;
+    }
+	section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		row-gap: 20px;
+		column-gap: 30px;
+        margin-top: 15px;
+	}
+
+	label {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+        font-size: 1.1rem;
+
+		input {
+			&::placeholder {
+				color: $inner-text;
+			}
+		}
+	}
 }
-  
+
+input {
+border-radius: 6px;
+
+	border: {
+		color: rgb(182, 172, 172);
+		width: 1.5px;
+		outline: none;
+		style: solid;
+	}
+    font-size: 1rem;
+	font-family: "Inter", sans-serif;
+    color: $text;
+	&::placeholder {
+		color: $inner-text;
+	}
+	&[type="text"],
+	&[type="email"],
+	&[type="tel"] {
+		outline: none;
+		padding: 15px 15px;
+	}
+}

@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Gloock&family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -8,10 +14,25 @@ h6 {
   font-family: "Gloock", serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ===== Scrollbar CSS ===== */
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #FEFAE0;
+  margin: 25px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #646b4c;
+  border-radius: 3px;
+  border: 0px solid #ffffff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 
 body {
@@ -23,6 +44,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Inter", sans-serif;
+  color: #524f4b;
 }
 
 .wrapper {
@@ -58,7 +80,7 @@ body {
   background-color: #FEFAE0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  padding: 20px;
+  padding: 40px 50px;
   height: 100%;
   overflow: auto;
 }
@@ -73,23 +95,50 @@ body {
   gap: 40px;
 }
 
-/* ===== Scrollbar CSS ===== */
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 5px;
+#customerInformation {
+  margin-top: 40px;
+}
+#customerInformation h2 {
+  color: #a39676;
+}
+#customerInformation section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin-top: 15px;
+}
+#customerInformation label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+#customerInformation label input::-moz-placeholder {
+  color: #a39676;
+}
+#customerInformation label input::placeholder {
+  color: #a39676;
 }
 
-*::-webkit-scrollbar-track {
-  background: #FEFAE0;
-  margin: 25px;
+input {
+  border-radius: 6px;
+  border-color: rgb(182, 172, 172);
+  border-width: 1.5px;
+  border-outline: none;
+  border-style: solid;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  color: #524f4b;
 }
-
-*::-webkit-scrollbar-thumb {
-  background-color: #646b4c;
-  border-radius: 3px;
-  border: 0px solid #ffffff;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+input::-moz-placeholder {
+  color: #a39676;
+}
+input::placeholder {
+  color: #a39676;
+}
+input[type=text], input[type=email], input[type=tel] {
+  outline: none;
+  padding: 15px 15px;
 }/*# sourceMappingURL=main.css.map */

@@ -14,6 +14,12 @@
 	background: linear-gradient(129deg, $color1 0%, $color2 77%);
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -21,4 +27,25 @@ h4,
 h5,
 h6 {
 	font-family: "Gloock", serif;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: $pale;
+    margin:25px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: $dark-green;
+    border-radius: 3px;
+    border: 0px solid #ffffff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
