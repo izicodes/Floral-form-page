@@ -61,6 +61,13 @@ body {
 			color: $inner-text;
 		}
 	}
+
+	.borderLine {
+		margin: -10px;
+        height: 3px;
+        background-color: $dark-green;
+        border: 0 none;
+	}
 }
 
 
