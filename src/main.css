@@ -100,27 +100,32 @@ body {
 }
 
 #customerInformation,
-#deliveryDetails, #paymentInformation {
+#deliveryDetails, #paymentInformation, #orderSummary {
   margin: 0;
 }
 #customerInformation label,
-#deliveryDetails label, #paymentInformation label {
+#deliveryDetails label, #paymentInformation label, #orderSummary label {
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: 1.1rem;
 }
-#customerInformation label input::-moz-placeholder, #customerInformation label select::-moz-placeholder, #deliveryDetails label input::-moz-placeholder, #deliveryDetails label select::-moz-placeholder, #paymentInformation label input::-moz-placeholder, #paymentInformation label select::-moz-placeholder {
+#customerInformation label input::-moz-placeholder, #customerInformation label select::-moz-placeholder, #deliveryDetails label input::-moz-placeholder, #deliveryDetails label select::-moz-placeholder, #paymentInformation label input::-moz-placeholder, #paymentInformation label select::-moz-placeholder, #orderSummary label input::-moz-placeholder, #orderSummary label select::-moz-placeholder {
   color: #a39676;
 }
 #customerInformation label input::placeholder, #customerInformation label select::placeholder,
 #deliveryDetails label input::placeholder,
-#deliveryDetails label select::placeholder, #paymentInformation label input::placeholder, #paymentInformation label select::placeholder {
+#deliveryDetails label select::placeholder, #paymentInformation label input::placeholder, #paymentInformation label select::placeholder, #orderSummary label input::placeholder, #orderSummary label select::placeholder {
   color: #a39676;
 }
 
 #bouquetSelection label {
   height: auto !important;
+}
+
+#orderSummary p {
+  display: flex;
+  justify-content: space-between;
 }
 
 #deliveryDetails {
@@ -177,4 +182,8 @@ input::placeholder, select::placeholder, textarea::placeholder {
 select {
   padding: 15px;
   text-align: center;
+}
+
+p {
+  font-size: 1.1rem;
 }/*# sourceMappingURL=main.css.map */
