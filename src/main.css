@@ -104,13 +104,44 @@ body {
   background-color: #646b4c;
   border: 0 none;
 }
+.main-form .btn-containers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-form .btn-containers button {
+  width: 140px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-color: #646b4c;
+  transition: 300ms;
+}
+.main-form .btn-containers button[type=reset] {
+  background-color: transparent;
+}
+.main-form .btn-containers button[type=submit] {
+  color: white;
+}
+.main-form .btn-containers button[type=submit]:hover {
+  color: inherit;
+}
+.main-form .btn-containers button:hover {
+  background-color: #CCD5AE;
+}
 
 #customerInformation,
-#deliveryDetails, #paymentInformation, #orderSummary {
+#deliveryDetails,
+#paymentInformation,
+#orderSummary {
   margin: 0;
 }
 #customerInformation label,
-#deliveryDetails label, #paymentInformation label, #orderSummary label {
+#deliveryDetails label,
+#paymentInformation label,
+#orderSummary label {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -121,7 +152,11 @@ body {
 }
 #customerInformation label input::placeholder, #customerInformation label select::placeholder,
 #deliveryDetails label input::placeholder,
-#deliveryDetails label select::placeholder, #paymentInformation label input::placeholder, #paymentInformation label select::placeholder, #orderSummary label input::placeholder, #orderSummary label select::placeholder {
+#deliveryDetails label select::placeholder,
+#paymentInformation label input::placeholder,
+#paymentInformation label select::placeholder,
+#orderSummary label input::placeholder,
+#orderSummary label select::placeholder {
   color: #a39676;
 }
 
@@ -166,7 +201,9 @@ section {
   margin-top: 15px;
 }
 
-input, select, textarea {
+input, select,
+textarea,
+button {
   border-radius: 6px;
   border-color: rgb(182, 172, 172);
   border-width: 1.5px;
@@ -178,10 +215,12 @@ input, select, textarea {
   outline: none;
   padding: 15px;
 }
-input::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder, button::-moz-placeholder {
   color: #a39676;
 }
-input::placeholder, select::placeholder, textarea::placeholder {
+input::placeholder, select::placeholder,
+textarea::placeholder,
+button::placeholder {
   color: #a39676;
 }
 

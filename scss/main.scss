@@ -64,16 +64,46 @@ body {
 
 	.borderLine {
 		margin: -10px;
-        height: 3px;
-        background-color: $dark-green;
-        border: 0 none;
+		height: 3px;
+		background-color: $dark-green;
+		border: 0 none;
+	}
+
+	.btn-containers {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		button {
+			width: 140px;
+			border-radius: 30px;
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			-ms-border-radius: 30px;
+			-o-border-radius: 30px;
+			background-color: $dark-green;
+			transition: 300ms;
+
+			&[type="reset"] {
+				background-color: transparent;
+			}
+			&[type="submit"] {
+				color: white;
+				&:hover {
+					color: inherit;
+				}
+			}
+			&:hover {
+				background-color: $green;
+			}
+		}
 	}
 }
 
-
-
 #customerInformation,
-#deliveryDetails, #paymentInformation, #orderSummary {
+#deliveryDetails,
+#paymentInformation,
+#orderSummary {
 	margin: 0;
 	label {
 		display: flex;
@@ -89,22 +119,23 @@ body {
 	}
 }
 
+// transition: 300ms;
 
 #bouquetSelection {
-    label {
-        height: auto !important;
-    }
+	label {
+		height: auto !important;
+	}
 }
 
 #orderSummary {
 	p {
 		display: flex;
-		justify-content:  space-between;
+		justify-content: space-between;
 	}
 }
 
 #deliveryDetails {
-    margin: 0;
+	margin: 0;
 	#deliveryDate {
 		display: flex;
 		flex-direction: column;
@@ -131,14 +162,16 @@ body {
 }
 
 section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 30px;
-    margin-top: 15px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 20px;
+	column-gap: 30px;
+	margin-top: 15px;
 }
 
-input, textarea{
+input,
+textarea,
+button {
 	border-radius: 6px;
 	border: {
 		color: rgb(182, 172, 172);
@@ -152,8 +185,8 @@ input, textarea{
 	&::placeholder {
 		color: $inner-text;
 	}
-    outline: none;
-		padding: 15px;
+	outline: none;
+	padding: 15px;
 }
 
 select {
@@ -162,7 +195,7 @@ select {
 	text-align: center;
 }
 
-label[for="terms"]{
+label[for="terms"] {
 	display: flex;
 	justify-content: center;
 	gap: 10px;
