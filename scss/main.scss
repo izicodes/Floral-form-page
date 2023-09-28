@@ -162,6 +162,17 @@ select {
 	text-align: center;
 }
 
+label[for="terms"]{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+
+	a {
+		color: $dark-green;
+		gap: 0;
+	}
+}
+
 p {
 	font-size: 1.1rem;
 }

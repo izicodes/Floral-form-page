@@ -190,6 +190,16 @@ select {
   text-align: center;
 }
 
+label[for=terms] {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+label[for=terms] a {
+  color: #646b4c;
+  gap: 0;
+}
+
 p {
   font-size: 1.1rem;
 }/*# sourceMappingURL=main.css.map */
