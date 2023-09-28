@@ -88,6 +88,7 @@ body {
   text-align: center;
   font-size: 2.5rem;
   color: #646b4c;
+  margin-bottom: 40px;
 }
 .main-form form {
   display: flex;
@@ -99,22 +100,22 @@ body {
 }
 
 #customerInformation,
-#deliveryDetails {
-  margin-top: 40px;
+#deliveryDetails, #paymentInformation {
+  margin: 0;
 }
 #customerInformation label,
-#deliveryDetails label {
+#deliveryDetails label, #paymentInformation label {
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: 1.1rem;
 }
-#customerInformation label input::-moz-placeholder, #customerInformation label select::-moz-placeholder, #deliveryDetails label input::-moz-placeholder, #deliveryDetails label select::-moz-placeholder {
+#customerInformation label input::-moz-placeholder, #customerInformation label select::-moz-placeholder, #deliveryDetails label input::-moz-placeholder, #deliveryDetails label select::-moz-placeholder, #paymentInformation label input::-moz-placeholder, #paymentInformation label select::-moz-placeholder {
   color: #a39676;
 }
 #customerInformation label input::placeholder, #customerInformation label select::placeholder,
 #deliveryDetails label input::placeholder,
-#deliveryDetails label select::placeholder {
+#deliveryDetails label select::placeholder, #paymentInformation label input::placeholder, #paymentInformation label select::placeholder {
   color: #a39676;
 }
 

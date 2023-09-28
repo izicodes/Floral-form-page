@@ -158,11 +158,12 @@
 
 					<div id="paymentInformation">
 						<h2>Payment Information</h2>
-						<div>
+						<section>
+							<label for="nameCard">Name on Card<input type="text" name="nameCard" id="nameCard" placeholder="E.g. Mrs Jane N Doe" /></label>
 							<label for="cardNumber">Card Number <input type="text" name="cardNumber" id="cardNumber" placeholder="E.g. 5555-3333-4444-2222" /></label>
-							<label for="expirationDate">Card Number <input type="text" name="expirationDate" id="expirationDate" placeholder="MM / YY" /></label>
-							<label for="cVV">Card Number <input type="text" name="cVV" id="cVV" placeholder="E.g. 123" /></label>
-						</div>
+							<label for="expirationDate">Expiration Date <input type="text" name="expirationDate" id="expirationDate" placeholder="MM / YY" maxlength="5" /></label>
+							<label for="cVV">CVV <input type="text" name="cVV" id="cVV" placeholder="E.g. 123" maxlength="3" /></label>
+						</section>
 					</div>
 
 					<div id="orderSummary">
